@@ -1,0 +1,417 @@
+/* full page */
+*{
+	margin:0;
+	padding:0;
+	scroll-behavior:smooth;
+}
+/* rooe */
+..root{
+	--primaryColor:#dedee314;
+	--blueColor:#0000ff;
+
+}
+
+
+
+/* body */
+body{
+	width:100%;
+	background:#e4e4e496
+}
+
+/*navigationBar*/
+.navigationBar{
+	background: #dfdfdfbf;
+	width:100%;
+	height: 50px;
+	box-shadow: 0px 1px 8px 1px black;
+	position: fixed;
+	z-index: 1000;
+}
+.navigationMenu{
+	float:right;
+	margin-right: 83px;
+	margin-top: -31px;
+}
+.navigationMenu a{
+		text-decoration: none;
+		padding: 17px 33px;
+		font-family: arial;
+		color:white;
+		font-size: 20px;
+}
+.navigationMenu a:hover{
+	background: rgb(237, 237, 237);
+	color:orange;
+	transition: all 2s;
+	cursor:pointer;
+}
+.design {
+    color: #bfbff9;
+    font-family: arial;
+    font-size: 36px;
+    margin-left: 73px;
+    width: 125px;
+    display: flex;
+    align-items: center;
+}
+
+.design:hover{
+	color:#876464;
+	transition:all 2s;
+	cursor:pointer;
+}
+/*home page*/
+.home{
+	background:url("background(9).jpg");
+	background-repeat:no-repeat;
+	background-size: cover;
+	height: 500px;
+}
+.myDetails{
+	margin-top: 120px;
+	margin-left: 300px;
+	position: absolute;
+	width: 357px;
+	font-size: 30px;
+	padding: 5px;
+	box-sizing: border-box;
+}
+.girl {
+    float: right;
+    margin-top: 108px;
+    margin-right: 214px;
+    box-shadow: 3px 3px 6px -1px black;
+}
+
+/*About page*/
+.about {
+	/* width: 100%; */
+	height: 570px;
+}
+.content{
+	margin-left: 150px;
+	padding: 10px;
+	box-sizing: border-box;
+	margin-top: 60px;
+	position: absolute;
+}
+
+.contentAbout{
+	font-size: 30px;
+	font-family: arial;
+	margin-top: -9px;
+}
+
+.about span{
+	color:red;
+	font-size: 35px;
+	margin-top: 100px;
+}
+
+/*about paragraph*/
+.paragraph {
+    width: 400px;
+    font-family: arial;
+    font-size: 21px;
+    margin-top: 10px;
+}
+
+.light {
+    float: right;
+    margin-right: 210px;
+    margin-top: 174px;
+}
+
+img#lightImg {
+    width: 305px;
+    margin-top: -90px;
+}
+
+
+.lightOff {
+	margin-left: 132px;
+    margin-top: 214px;
+    position: absolute;
+}
+
+.lightOn {
+	margin-left: 355px;
+	margin-top: 214px;
+	position: absolute;
+}
+
+button {
+    padding: 5px;
+    box-sizing: border-box;
+}
+/*students CV*/
+#studentCV {
+    background: #f4f4f4b0;
+    width: 116px;
+    text-align: center;
+    font-family: arial;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-top: 280px;
+    margin-left: 250px;
+    position: absolute;
+    border-radius: 44px;
+    transition: all 1.5s;
+}
+#zakir{
+	background: #e4e4e44f;
+	width: 250px;
+	padding: 10px;
+	box-sizing: border-box;
+	margin-left: 220px;
+	margin-top: 390px;
+	position: absolute;
+	border-radius: 5px;
+	display: none;
+	transition: all 1.5s;
+}
+#belal{
+	background: #e4e4e44f;
+	width: 230px;
+	padding: 10px;
+	margin-left: 481px;
+	margin-top: 448px;
+	position: absolute;
+	border-radius: 5px;
+	display:none;
+}
+
+
+/*Product page */
+.product {
+    /* width: 100%; */
+    height: 970px;
+}
+
+.ProductP {
+    font-family: arial;
+    font-size: 45px;
+    width: 100%;
+    text-align: center;
+    margin-top: 66px;
+    position: absolute;
+}
+.ProductP span{
+	color:red;
+}		  
+
+					
+						
+/*Product img*/
+.eightImg {
+    background: #f0fcf033;
+    width:100%;
+    height: 800px;
+    margin-top: 200px;
+    position: absolute;
+}
+
+.subContent{
+	background:#fff;
+	width: 250px;
+	display: inline-block;
+	margin-left: 83px;
+	padding: 0px;
+	box-sizing: border-box;
+	margin-top: 70px;
+										
+	/*keyfarms control down*/
+	animation-name:zakir;
+	animation-duration:2s;
+	transition:all 2s;
+}	
+
+.picture{
+	height: 200px;
+}		
+
+							
+.subContent:hover{
+	background:transparent;
+	cursor:pointer;
+	transform:rotate(360deg);
+}
+									
+/*It's a keyfarms work for subContent*/
+@keyframes zakir{
+		from{transform:scale(0.1);opacity:(0.1)}
+		to{transform:scale(1);opacity:(1)}
+}
+
+
+
+/* extra*/						
+.text{
+	text-align:center;
+}			
+.text .heading3{
+	font-family: arial;
+	font-size: 25px;
+	color: #bcb7b7;
+}		
+.text .price{
+	color: #876464;
+	font-size: 20px;
+}		
+.text .shopNow{
+	color: white;
+	background: #bfbfee94;
+	padding: 5px;
+	font-size: 20px;
+}				
+.text .shopNow:hover{
+	background: #e7ce9fcf;
+	color: white;
+	transition:all 2s;
+	cursor:pointer;
+	font-size:22px;
+}
+						
+
+/*Contact page*/
+.contact {
+    /* width: 100%; */
+    height: 500px;
+}
+/* .contactContent{
+	background: #ebebeb1a;
+	width:100%;
+	height: 700px;
+} */
+.contactHeading{
+	font-family: arial;
+	font-size: 40px;
+	width: 100%;
+	text-align: center;
+	padding: 5px;
+	margin-top: 70px;
+	position: absolute;
+}
+.contactHeading:hover{
+	color:orange;
+	transition:all 1s;
+	cursor:pointer;
+}
+.contactHeading span{
+	color:red;
+}
+
+/*Login Form*/
+.loginForm{
+	background: #f3f3f34f;
+	width: 299px;
+	text-align: center;
+	margin-top: 200px;
+	position: absolute;
+	margin-left: 162px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.inputBox  {
+    padding: 10px;
+    width: 200px;
+    margin-top: 10px;
+    border: none;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.submit{
+	margin-top: 20px;
+	font-size: 20px;
+	padding: 5px;
+	background: #fff;
+	border: none;
+	border-radius: 20px;
+	width: 100px;
+	color: #b7b7c4;
+}
+
+.submit:hover{
+	background:#b7b7c4;
+	color:white;
+	transition:all 2s;
+	cursor:pointer;
+}
+.loginHeading{
+	color:#b7b7c4;
+	font-size: 33px;
+	margin-left: -119px;
+	font-family: arial;
+}
+
+/*contact Form*/
+.contactForm{
+	background: #f3f3f34f;
+	width: 300px;
+	margin-top: 200px;
+	margin-left: 950px;
+	position: absolute;
+	padding: 10px;
+	border-radius: 7px;
+	height: 181px;
+}
+.contactForm img{
+	display: flex;
+	margin-top: 17px;
+	padding: 5px;
+}
+.Contact {
+    color: #b7b7c4;
+    font-size: 35px;
+    font-family: arial;
+    margin-left: 7px;
+    margin-top: -11px;
+}
+.contactForm .text{
+	width: 180px;
+	margin-left: 23px;
+	margin-top: -24px;
+	position: absolute;
+}
+.contactForm .text a{
+	text-decoration:none;
+}
+
+/*zakir*/
+.zakir {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 601px;
+    width: 219px;
+    height: 203px;
+    box-shadow: 2px 2px 6px 0px #060405;
+}
+.zakir:hover{
+	background:rgb(221, 240, 192);
+	transition:all 2s;
+	cursor:pointer;
+}
+.zakirName{
+	position: absolute;
+	margin-left: 585px;
+	margin-top: 425px;
+	font-size: 33px;
+	text-shadow: 2px 2px 3px #19a077d4;
+}
+.zakirPage {
+    margin-top: 480px;
+    margin-left: 641px;
+    position: absolute;
+}
+.zakirPage a{
+	text-decoration:none;
+	color: red;
+}
+
+.zakirPage a:active{
+	color:blue;
+	text-decoration:underline;
+}
